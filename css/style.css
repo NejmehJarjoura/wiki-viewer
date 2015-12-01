@@ -1,0 +1,230 @@
+body {
+  background: #F0F4C3;
+  font-family: font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px) {
+    .sidebar {  
+      width: 100%;
+      border-bottom: 2px ridge #827717;
+        padding: 2%;
+        position: relative;
+        order: 1;
+    }
+    
+    .result {
+        order: 2;
+        left: 0;
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+    
+    .side-action {
+        margin-bottom: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        
+    }
+    
+    .search-icon {
+        margin-left: -10%;
+    }
+    
+    h1 {
+        padding-bottom: 0;
+    }
+    
+    
+}
+
+@media screen and (min-width: 761px) {
+    .sidebar {
+      padding: 3% 2% 0 2%;e;
+      width: 30%;
+      height: 100vh;
+      border-right: 2px ridge #827717;
+        float: left;
+        top:0;
+        left:0;
+        position: fixed;
+    }
+    
+    .result {
+        width: 70%;
+        float: right;
+        position: relative;
+        left: 30%;
+    }
+    .side-action {
+        margin-bottom: 20%;
+    }
+    
+    .search-icon {
+        margin-left: -15%;
+    }
+    
+    h1 {
+        padding-bottom: 10%;
+    }
+}
+
+.sidebar {
+    background: #E6EE9C;
+    display: block;
+}
+
+h1 {
+    color: #827717;
+    font-size: 30px;
+}
+
+.btn-wiki {
+  background: #CDDC39;
+  border: 1px solid #CDDC39;
+  color: #827717;
+  outline: none;
+  border-radius: 30px;
+    width: 90%;
+    height: 50px;
+}
+
+.btn-wiki:hover , .btn-wiki:focus, .btn-wiki:active {
+  background: #CDDC39;
+  border-color: #CDDC39;
+  color: #827717;
+  outline: 0;
+}
+
+.search-wiki {
+    background: #F0F4C3;
+    border: 1px solid #CDDC39;
+    color: #827717;
+    border-radius: 30px;
+    width: 90%;
+    height: 50px;
+    outline: 0;
+    padding-left: 4%;
+    display: inline-block;
+    padding-right: 10%;
+}
+
+.search-icon {
+    display: inline-block;
+}
+
+.result > ul {
+    padding: 2%;
+}
+
+.result > ul > li {
+    padding: 2%;
+    background: #E6EE9C;
+    list-style: none;
+    margin: 1rem;
+    -webkit-transition:all .4s ease 0s;
+    -moz-transition:all .4s ease 0s;
+    -o-transition:all .4s ease 0s;
+    transition:all .4s ease 0s;
+}
+
+.result > ul > li:hover {
+    padding: 3%;
+    background: #CDDC39;
+    
+}
+
+.result > ul > li > a {
+    color: #827717;
+}
+
+.result > ul > li > a:hover,
+.result > ul > li > a:visited,
+.result > ul > li > a:link,
+.result > ul > li > a:active {
+    color: #827717;
+    text-decoration: none;
+}
+
+.autocomplete {
+    background: #F0F4C3;
+    border: 1px solid #CDDC39;
+    color: #827717;
+    width: 90%; 
+    display: none;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.autocomplete > ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 200px;
+}
+
+.autocomplete > ul > li {
+    padding: 2%;
+    outline: none;
+}
+
+.autocomplete > ul > li:hover,
+.autocomplete > ul > li:focus,
+.autocomplete > ul > li:active{
+    background: #CDDC39;
+    outline: none;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(205,220,57,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(205,220,57,0.4); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
